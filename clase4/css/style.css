@@ -1,0 +1,90 @@
+.caja {
+position: relative;
+width: 1000px;
+height: 1000px;
+}
+
+.circulo1 {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+.circulo2 {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    z-index: 1;
+}
+
+.circulo3 {
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+
+.circulo4 {
+    background-color: rgb(249, 238, 188);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.ojo1 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    z-index: 1;
+}
+
+.ojo2 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    z-index: 1;
+}
+
+.boca {
+    background-color: black;
+    width: 50px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    left: 325px;
+    z-index: 1;
+}
+
+.nariz {
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 350px;
+    left: 337px;
+    z-index: 1;
+}
