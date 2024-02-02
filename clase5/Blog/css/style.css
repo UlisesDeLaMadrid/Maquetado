@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #155263;
+    min-height: 100vh;
+}
+
+header h1 {
+    text-align: center;
+    color: #ffc93c;
+}
+
+main {
+    width: 100%;
+}
+
+.ListaBlog  {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 3px solid #ff9a3c;
+}
+
+.Post {
+    background-color: #ff6f3c;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .Post {
+      width: 45%;
+      display: inline-block;
+      
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .Post {
+      width: 30%;
+      display: inline-block;
+      
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .Post {
+      width: 20%;
+      display: inline-block;
+      
+    }
+  }
+  section {
+    text-align: center;
+  }
+  img {
+    margin-top: 10px;
+  }

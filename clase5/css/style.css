@@ -1,0 +1,50 @@
+body {
+    background-color: aliceblue;
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(252, 229, 129);
+    }
+    .movil {
+        display: block;
+    }
+    .tablet, .desktop, .xxl {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        background-color: rgb(205, 252, 129);
+    }
+    .tablet {
+        display: block;
+    }
+    .movil, .desktop, .xxl {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: rgb(129, 252, 219);
+    }
+    .desktop {
+        display: block;
+    }
+    .tablet, .movil, .xxl {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: rgb(129, 174, 252);
+    }
+    .xxl {
+        display: block;
+    }
+    .tablet, .desktop, .movil {
+        display: none;
+    }
+}
