@@ -1,0 +1,52 @@
+section {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.contenedor1 {
+    background-color: rgb(188, 253, 232);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 300px; /* Establece que la altura minima sea 300px, asi si se agregan elementos el contenedor puede seguir creciendo*/
+}
+
+.caja {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(1, 161, 161);
+    margin: 10px;
+}
+
+.contenedor2 {
+    background-color: rgb(243, 255, 202);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 300px;
+}
+
+
+.caja2 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(231, 248, 48);
+    margin: 10px;
+}
+
+.contenedor3 {
+    background-color: rgb(250, 189, 151);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+
+.caja3 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(232, 82, 1);
+    margin: 10px;
+}
+
