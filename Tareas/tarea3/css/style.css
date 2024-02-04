@@ -19,7 +19,7 @@ ul {
 
 aside {
     text-align: justify;
-    max-width: 200px;
+    max-width: 250px;
     border: 1px solid;
     display: flex;
     min-width: 200px;
@@ -57,10 +57,11 @@ section {
 }
 
 li {
-    margin-top: 20px;
+    margin-top: 19px;
     color: #febe7e;
-    font-size: 17px;
+    font-size: 20px;
     transition: all 400ms ease;
+    margin-right: 30px;
     
 }
 
@@ -79,3 +80,25 @@ li:hover {
 
 }
 
+section::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+      /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+section::-webkit-scrollbar-thumb {
+    background: #febe7e;
+    border-radius: 4px;
+}
+
+aside::-webkit-scrollbar-thumb {
+    background: #febe7e;
+    border-radius: 4px;
+}
+
+aside::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+      /* Ocultar scroll */
+}
