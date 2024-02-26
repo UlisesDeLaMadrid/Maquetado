@@ -1,0 +1,39 @@
+/*Hay que poner atencion en la estructura de carpetas para trabajar con SASS y dentro de la carpeta CSS no es necesario crear el archivo CSS ya que SASS lo va a crear automaticamente*/
+$primaryColor: green;
+$cardSpacing: 20px 20px 20px 20px;
+/*Las anteriores son variables que se pueden utilizar en los atributos de los objetos*/
+
+@mixin flexColumnCenter(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Lo anterior se llama "Mixin" es como crear una variable con distintos atributos, en este caso los atributos son para trabajar con FlexBox, para poder aplicarlos a distintos contenedores y no repetir tanto codigo*/
+
+body {
+    background-color: black;
+    @include flexColumnCenter(); /*Aqui se manda llamar al "Mixin" con la palabra "@include" seguido del nombre del "Mixin" en este caso flexColumnCenter*/
+}
+h1 {
+    color: aliceblue;
+}
+
+/* Pon atencion a como se separan los selectores y como se anidan por que es similar la anidacion al documento HMTL*/
+.post {
+    @include flexColumnCenter();
+    img {
+        border-radius: 50%;
+        padding: $cardSpacing; /*Aqui se manda llamar a la variable de espaciado*/
+        &:hover { /*Aqui el simbolo "&" toma el atributo del padre inmediato  en este caso "img"*/
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .content {
+        p {
+            color: $primaryColor; /*Aqui se manda llamar a la variable que almacena el color verde*/
+        }
+    }
+}
+

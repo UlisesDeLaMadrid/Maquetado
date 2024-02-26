@@ -1,0 +1,31 @@
+@import "global";
+
+.seccion1 {
+    @include flexBox ();
+    width: 600px;
+    height: 600px;
+    backdrop-filter: blur(50px);
+    border-radius: 100%;
+}
+
+.imagen {
+    background-image: url(https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?w=1380&t=st=1707329362~exp=1707329962~hmac=6ed0f95bcb6907f9b0d658f8bbaf7d20c820ed1dbf3df7defea4555489a5ed86);
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 1000ms ease;
+        &:hover {
+            height: 500px;
+            width: 500px;
+            border-radius: 100%;
+            background-color: rgb(253, 179, 52);
+            filter: grayscale(1);  
+        }
+}
+
+.texto {
+    color: rgb(65, 1, 25);
+}
+
